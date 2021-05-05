@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="asynctask">
+    <output-path>$PROJECT_DIR$/out/artifacts/asynctask</output-path>
+    <root id="archive" name="asynctask.jar">
+      <element id="module-output" name="asynctask" />
+    </root>
+  </artifact>
+</component>
