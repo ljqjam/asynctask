@@ -1,1 +1,4 @@
-异步任务的1.0版本
+#ignore this t11e#
+/target/
+.idea
+*.txt
