@@ -34,7 +34,7 @@ public class TaskCoordinator {
         LinkedBlockingQueue<Runnable> listenQueue = new LinkedBlockingQueue<Runnable>(1);
         ThreadFactory listenThreadFactory = (new NamedThreadFactory("task-listener"));
         ExecutorService listenService = new ThreadPoolExecutor(1, 1, 0L, TimeUnit.SECONDS, listenQueue, listenThreadFactory);
-        //死循环监听，分发（尝试，类似epoll的一个模型）
+        //死循环监听，分发（尝试，类似reactor的一个模型）
         listenService.submit(this::listen);
     }
 
